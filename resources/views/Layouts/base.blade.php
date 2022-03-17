@@ -1277,6 +1277,7 @@ Education Management System
   <script src="../../../assets/js/plugins/dropzone.min.js"></script>
   <script src="../../../assets/js/plugins/quill.min.js"></script>
   <script src="../../../assets/js/plugins/multistep-form.js"></script>
+  
   <!-- Kanban scripts -->
   <script src="../../assets/js/plugins/dragula/dragula.min.js"></script>
   <script src="../../assets/js/plugins/jkanban/jkanban.js"></script>

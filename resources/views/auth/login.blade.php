@@ -68,7 +68,7 @@
                                                             class="nav-item dropdown dropdown-hover dropdown-subitem list-group-item border-0 p-0">
                                                             <a class="dropdown-item border-radius-md ps-3 d-flex align-items-center mb-1 text-dark"
                                                                 id="dropdownSignIn">
-                                                                <i class="material-icons opacity-6 me-2 text-md">login</i>
+                                                                <i class="material-icons opacity-6 me-2 text-md">assignment</i>
                                                                 <span>Requirements</span>
                                                                 <img src="../../../assets/img/down-arrow.svg"
                                                                     alt="down-arrow" class="arrow ms-auto">
@@ -87,30 +87,37 @@
                                                                     href="../../../pages/authentication/signin/illustration.html">
                                                                     <span>Cut off points</span>
                                                                 </a>
+                                                             
+                                                            </div>
+                                                        </li>
+                                                        <li
+                                                            class="nav-item dropdown dropdown-hover dropdown-subitem list-group-item border-0 p-0">
+                                                            <a class="dropdown-item border-radius-md ps-3 d-flex align-items-center mb-1 text-dark"
+                                                                id="dropdownSignIn">
+                                                                <i class="material-icons opacity-6 me-2 text-md">login</i>
+                                                                <span>Apply</span>
+                                                                <img src="../../../assets/img/down-arrow.svg"
+                                                                    alt="down-arrow" class="arrow ms-auto">
+                                                            </a>
+                                                            <div class="dropdown-menu mt-0 py-3 px-2"
+                                                                aria-labelledby="dropdownSignIn">
+                                                                <a class="dropdown-item ps-3 border-radius-md mb-1"
+                                                                    href="{{route('applyprimary')}}">
+                                                                    <span>Primary</span>
+                                                                </a>
+                                                                <a class="dropdown-item ps-3 border-radius-md mb-1"
+                                                                    href="{{route('apply-secondary')}}">
+                                                                    <span>Secondary</span>
+                                                                </a>
+                                                            
                                                                 <a class="dropdown-item ps-3 border-radius-md"
                                                                    href="{{route('apply')}}">
-                                                                    <span>Apply</span>
+                                                                    <span>Tertiary</span>
                                                                 </a>
                                                             </div>
                                                         </li>
-                                                        {{-- <li
-                                                        class="nav-item dropdown dropdown-hover dropdown-subitem list-group-item border-0 p-0">
-                                                        <a class="dropdown-item border-radius-md ps-3 d-flex align-items-center mb-1 text-dark"
-                                                            id="dropdownSignIn">
-                                                            <i class="material-icons opacity-6 me-2 text-md">login</i>
-                                                            <span>Admitted</span>
-                                                            <img src="../../../assets/img/down-arrow.svg"
-                                                                alt="down-arrow" class="arrow ms-auto">
-                                                        </a>
-                                                        <div class="dropdown-menu mt-0 py-3 px-2"
-                                                            aria-labelledby="dropdownSignIn">
-                                                            <a class="dropdown-item ps-3 border-radius-md mb-1"
-                                                                href="../../../pages/authentication/signin/basic.html">
-                                                                <span>Academic requirements</span>
-                                                            </a>
-                                                           
-                                                        </div>
-                                                    </li> --}}
+                                                    </ul>
+                                                
                                                 </div>
                                     </li>
                                     <li
@@ -319,24 +326,17 @@
                                             </div>
                                             <div class="text-center">
                                                 <button type="submit"
-                                                    class="btn btn-lg bg-gradient-primary btn-lg w-100 mt-4 mb-0">Sign
+                                                    class="btn btn-lg bg-gradient-secondary btn-lg w-100 mt-4 mb-0">Sign
                                                     in</button>
                                             </div>
                                             @if (Route::has('password.request'))
-                                                <a class="btn btn-link" href="{{ route('password.request') }}">
+                                                <a class="btn btn-link-secondary" href="{{ route('password.request') }}">
                                                     {{ __('Forgot Your Password?') }}
                                                 </a>
                                             @endif
                                         </form>
                                     </div>
-                                    {{-- <div class="card-footer text-center pt-0 px-lg-2 px-1">
-                                        <p class = "mb-4 text-sm mx-auto">
-                                            Don't have an account?
-                                            <a href  = "{{ route('register') }}"
-                                               class = "text-primary text-gradient font-weight-bold">Sign
-                                                up</a>
-                                        </p>
-                                    </div> --}}
+                                 
                                 </div>
                             </div>
                         </div>

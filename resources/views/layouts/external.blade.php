@@ -35,6 +35,7 @@
   <script src="../../assets/js/plugins/multistep-form.js"></script>
   <script src="../../assets/js/plugins/choices.min.js"></script>
   <script>
+    
     if (document.getElementById('choices-country')) {
       var country = document.getElementById('choices-country');
       const example = new Choices(country);

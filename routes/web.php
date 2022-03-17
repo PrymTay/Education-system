@@ -20,7 +20,13 @@ Route::get('/', function () {
     return view('auth.login');
 });
 
+// admission routes
+
 Route::get('/apply', [AdmissionController::class,'index'])->name('apply');
+Route::get('/apply-primary', [AdmissionController::class,'applyPrimary'])->name('applyprimary');
+Route::get('/apply-secondary', [AdmissionController::class,'applySecondary'])->name('apply-secondary');
+
+//end admission routes
 
 Auth::routes();
 
